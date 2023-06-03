@@ -1,0 +1,44 @@
+html {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+}
+
+.container {
+    width: min(60rem, 100% - 4rem);
+    margin-inline: auto;
+}
+
+.content {
+    padding-left: 3rem;
+}
+
+.sidebar {
+    background-color: #3b3a41;
+    width: min(18vw, 27rem);
+    position: sticky;
+    top: 2rem;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1599px) {
+    .sidebar {
+        display: none;
+    }
+}
