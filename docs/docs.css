@@ -58,7 +58,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .sidebar {
     width: min(20rem, 40% - 4rem);
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .nav {
@@ -83,23 +83,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .zoom {
-    background-color: white;
     height: 100%;
-    margin: 15px;
+    margin: 0 15px;
     padding: 4px 2px;
     border-radius: 22px;
     display: flex;
     flex-direction: column;
-    border: #cfcfcf 1px solid;
     transition: 0.3s ease;
+    position: sticky;
+    top: 15px;
 }
 
 .zoom a:first-child {
     margin-bottom: 25px;
-}
-
-.zoom a:focus {
-    transform: scale(0.75);
 }
 
 ::-webkit-scrollbar {
@@ -112,17 +108,21 @@ p, h1, h2, h3, h4, h5, h6 {
         background-color: #e7e7e7;
     }
     .container {
-        background-color: #ffffff;
+        background-color: white;
         border: #d8d8d8 1px solid;
         box-shadow: 0 0 8px #cfcfcf;
     }
     .sidebar {
-        background-color: #ffffff;
+        background-color: white;
         border-right: #d8d8d8 1px solid;
         box-shadow: 0 0 8px #cfcfcf;
     }
     a {
         color: black;
+    }
+    .zoom {
+        background-color: white;
+        border: #cfcfcf 1px solid;
     }
   }
 
@@ -141,6 +141,13 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     a {
         color: white;
+    }
+    .zoom {
+        background-color: #1a1a1a;
+        border: #2b2b2b 1px solid;
+    }
+    .zoom img {
+        filter: invert(1)
     }
   }
 
@@ -164,5 +171,11 @@ p, h1, h2, h3, h4, h5, h6 {
     }   
     .content {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .zoom {
+        display: none;
     }
 }
