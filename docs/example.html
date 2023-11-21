@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Docs | Example</title>
     <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,7 +24,7 @@
                 </ol>
             </div>
         </div>
-        <div class="container">
+        <div id="container" class="container">
             <h1>Example</h1>
             <div class="content">
                 <h2 id="lorem">Lorem Ipsum</h2>
@@ -39,10 +43,15 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate mi sit. Duis at tellus at urna condimentum. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Feugiat scelerisque varius morbi enim nunc faucibus a. Tincidunt augue interdum velit euismod in. Purus semper eget duis at. Ante in nibh mauris cursus. Convallis aenean et tortor at. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Amet commodo nulla facilisi nullam vehicula. Lacinia at quis risus sed vulputate odio ut enim.</p>
             </div>
         </div>
-        <div class="zoom">
-            <a href="#"><img src="assets/add.svg" alt="Zoom In"></img></a>
-            <a href="#"><img src="assets/remove.svg" alt="Zoom Out"></img></a>
+        <div class="controls">
+            <div class="zoom">
+                <a href="#" onclick="zoomIn()"><img class="icon" src="assets/add.svg" alt="Zoom In"></img></a>
+                <a href="#" onclick="zoomOut()"><img class="icon" src="assets/remove.svg" alt="Zoom Out"></img></a>
+            </div>
+            <div class="toggle">
+                <a href="#" onclick="toggleAppearance()"><img class="icon" src="assets/appearance.svg" alt="Dark/Light Mode Toggle"></img></a>
+            </div>
         </div>
-    </div>
+        </div>
 </body>
 </html>

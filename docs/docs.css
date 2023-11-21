@@ -17,7 +17,7 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: system-ui;
+    font-family: 'Noto Sans Mandaic', sans-serif;
     font-size: 1.125rem;
     line-height: 2;
     margin: 0;
@@ -44,6 +44,10 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 10px;
 }
 
+h1 {
+    margin: 10px 10px 10px 0;
+}
+
 .wrapper {
     display: flex;
 }
@@ -51,7 +55,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     width: min(60rem, 100% - 4rem);
     margin-inline: auto;
-    padding: 5px 30px 20px 30px;
+    padding: 10px 30px 20px 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -83,7 +87,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .zoom {
-    height: 100%;
+    height: fit-content;
+    width: fit-content;
     margin: 0 15px;
     padding: 4px 2px;
     border-radius: 22px;
@@ -91,11 +96,21 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     transition: 0.3s ease;
     position: sticky;
-    top: 15px;
+    top: 20px;
 }
 
 .zoom a:first-child {
     margin-bottom: 25px;
+}
+
+.toggle {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 15px;
+    padding: 5px 2px;
+    border-radius: 20px;
+    position: sticky;
+    top: 110px;
 }
 
 ::-webkit-scrollbar {
@@ -105,7 +120,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #e7e7e7;
+        background-color: #f0f0f0;
     }
     .container {
         background-color: white;
@@ -124,12 +139,16 @@ p, h1, h2, h3, h4, h5, h6 {
         background-color: white;
         border: #cfcfcf 1px solid;
     }
+    .toggle {
+        background-color: white;
+        border: #cfcfcf 1px solid;
+    }
   }
 
 @media (prefers-color-scheme: dark) {
     body{
         background-color: #111111;
-        color: rgb(243, 243, 243);
+        color: white;
     }
     .container {
         background-color: #1a1a1a;
@@ -146,8 +165,12 @@ p, h1, h2, h3, h4, h5, h6 {
         background-color: #1a1a1a;
         border: #2b2b2b 1px solid;
     }
-    .zoom img {
+    .icon {
         filter: invert(1)
+    }
+    .toggle {
+        background-color: #1a1a1a;
+        border: #2b2b2b 1px solid;
     }
   }
 
