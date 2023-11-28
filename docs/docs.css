@@ -86,30 +86,32 @@ h1 {
     padding-left: 3rem;
 }
 
-.zoom {
+.button {
     height: fit-content;
     width: fit-content;
     margin: 0 15px;
+    position: sticky;
+}
+
+.button a {
+    cursor: pointer;
+}
+
+#zoom {
     padding: 4px 2px;
     border-radius: 22px;
     display: flex;
     flex-direction: column;
-    transition: 0.3s ease;
-    position: sticky;
     top: 20px;
 }
 
-.zoom a:first-child {
+#zoom a:first-child {
     margin-bottom: 25px;
 }
 
-.toggle {
-    height: fit-content;
-    width: fit-content;
-    margin: 0 15px;
+#toggle {
     padding: 5px 2px;
     border-radius: 20px;
-    position: sticky;
     top: 110px;
 }
 
@@ -135,11 +137,7 @@ h1 {
     a {
         color: black;
     }
-    .zoom {
-        background-color: white;
-        border: #cfcfcf 1px solid;
-    }
-    .toggle {
+    .button {
         background-color: white;
         border: #cfcfcf 1px solid;
     }
@@ -161,14 +159,10 @@ h1 {
     a {
         color: white;
     }
-    .zoom {
-        background-color: #1a1a1a;
-        border: #2b2b2b 1px solid;
-    }
     .icon {
         filter: invert(1)
     }
-    .toggle {
+    .button {
         background-color: #1a1a1a;
         border: #2b2b2b 1px solid;
     }
@@ -179,10 +173,18 @@ h1 {
         margin: 0;
         width: 100%;
         border: none;
+        box-shadow: none;
     }
     .sidebar {
         width: min(50%, 40% - 4rem);
-    }    
+    }
+    .button {
+        margin: auto;
+    }
+    .controls {
+        /*background-color: white;*/
+        min-width: 50px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -198,7 +200,23 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
-    .zoom {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+    #zoom {
+        margin: 15px;
+        flex-direction: row;
+        padding: 4px 2px;
+        position: static;
+    }
+    #zoom a:first-child {
+        margin-right: 25px;
+        margin-bottom: 0;
+    }
+    #toggle {
         display: none;
+    }
+    .container {
+        box-shadow: none;
     }
 }

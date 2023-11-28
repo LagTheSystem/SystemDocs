@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&display=swap" rel="stylesheet">
-    <script src="../script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -17,10 +16,10 @@
             <div class="nav">
                 <h3>Example</h3>
                 <ol>
-                    <li><a href="#lorem">Lorem Ipsum</a></li>
-                    <li><a href="#dolor">Dolor sit amet</a></li>
-                    <li><a href="#consectetur">Consectetur adipiscing elit</a></li>
-                    <li><a href="#sed">Sed do eiusmod tempor incidunt</a></li>
+                    <li><a class="link" href="#lorem">Lorem Ipsum</a></li>
+                    <li><a class="link" href="#dolor">Dolor sit amet</a></li>
+                    <li><a class="link" href="#consectetur">Consectetur adipiscing elit</a></li>
+                    <li><a class="link" href="#sed">Sed do eiusmod tempor incidunt</a></li>
                 </ol>
             </div>
         </div>
@@ -44,14 +43,15 @@
             </div>
         </div>
         <div class="controls">
-            <div class="zoom">
-                <a href="#" onclick="zoomIn()"><img class="icon" src="assets/add.svg" alt="Zoom In"></img></a>
-                <a href="#" onclick="zoomOut()"><img class="icon" src="assets/remove.svg" alt="Zoom Out"></img></a>
+            <div class="button" id="zoom">
+                <a onclick="zoomIn()"><img class="icon" src="assets/add.svg" alt="Zoom In"></img></a>
+                <a onclick="zoomOut()"><img class="icon" src="assets/remove.svg" alt="Zoom Out"></img></a>
             </div>
-            <div class="toggle">
-                <a href="#" onclick="toggleAppearance()"><img class="icon" src="assets/appearance.svg" alt="Dark/Light Mode Toggle"></img></a>
+            <div class="button" id="toggle">
+                <a onclick="toggleAppearance()"><img class="icon" src="assets/appearance.svg" alt="Dark/Light Mode Toggle"></img></a>
             </div>
         </div>
         </div>
+        <script src="../script.js"></script>
 </body>
 </html>
