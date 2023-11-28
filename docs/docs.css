@@ -127,12 +127,12 @@ h1 {
     .container {
         background-color: white;
         border: #d8d8d8 1px solid;
-        box-shadow: 0 0 8px #cfcfcf;
+        /*box-shadow: 0 0 8px #cfcfcf;*/
     }
     .sidebar {
         background-color: white;
         border-right: #d8d8d8 1px solid;
-        box-shadow: 0 0 8px #cfcfcf;
+        /*box-shadow: 0 0 8px #cfcfcf;*/
     }
     a {
         color: black;
@@ -173,7 +173,7 @@ h1 {
         margin: 0;
         width: 100%;
         border: none;
-        box-shadow: none;
+        /*box-shadow: none;*/
     }
     .sidebar {
         width: min(50%, 40% - 4rem);

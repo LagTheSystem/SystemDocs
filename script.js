@@ -28,10 +28,10 @@ function toggleAppearance() {
         document.body.style.color = "white";
         container[0].style.backgroundColor = "#1a1a1a";
         container[0].style.border = "#2b2b2b 1px solid";
-        container[0].style.boxShadow = "none";
+        /*container[0].style.boxShadow = "none";*/
         sidebar[0].style.backgroundColor = "#1a1a1a";
         sidebar[0].style.borderRight = "#2b2b2b 1px solid";
-        sidebar[0].style.boxShadow = "none";
+        /*sidebar[0].style.boxShadow = "none";*/
         toggle.style.backgroundColor = "#1a1a1a";
         toggle.style.border = "#2b2b2b 1px solid";
         for (var i = 0; i < links.length; i++){
@@ -49,9 +49,9 @@ function toggleAppearance() {
         document.body.style.color = "black";
         container[0].style.backgroundColor = "white";
         container[0].style.border = "#d8d8d8 1px solid";
-        if (window.innerWidth > 1400) {
+        /*if (window.innerWidth > 1400) {
             container[0].style.boxShadow = "0 0 8px #cfcfcf";
-        }
+        }*/
         sidebar[0].style.backgroundColor = "white";
         sidebar[0].style.borderRight = "#d8d8d8 1px solid";
         toggle.style.backgroundColor = "white";
