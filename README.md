@@ -3,4 +3,10 @@ Currently a host of all the documentation for my projects. View it [here](https:
 I'm still building the website itself, so you won't be able to find any real documentation yet, but you can find an example document [here.](https://docs.lagthesystem.dev/docs/example)
 
 ## Future Roadmap
-In the future I am planning to change this website to be a Google Docs/Microsoft Word esque clone, using a design I like better, is open source, and is saved directly to your hard drive.
+While a specific roadmap hasn't been made yet, I do have some possible plans for the future. I currently believe this project could go one of two ways, it will either be:
+
+    a. An open source word processing app accessible through the    web or PC
+
+        or
+
+    b. An open source framework for designing simple documentation websites
