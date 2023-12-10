@@ -63,6 +63,7 @@ h1 {
 .sidebar {
     width: min(20rem, 40% - 4rem);
     background-color: white;
+    padding-right: 10px;
 }
 
 .nav {
