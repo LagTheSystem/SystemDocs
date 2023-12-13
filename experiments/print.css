@@ -1,0 +1,21 @@
+body {
+    font-family: 'Noto Sans Mandaic', sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    display: none;
+}
+
+.controls {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+textarea {
+    font-family: inherit;
+    width: 100%;
+}
