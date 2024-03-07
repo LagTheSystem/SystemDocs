@@ -89,7 +89,7 @@ h1 {
 }
 
 #zoom a:first-child {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 #toggle {
@@ -111,6 +111,13 @@ h1 {
     border: none;
     outline: none;
     font-size: 11pt;
+}
+
+#sizeLabel {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: light) {

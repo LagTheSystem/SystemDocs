@@ -29,6 +29,9 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 25px 20px 0 20px;
 }
 
+a {
+    transition: 0.25s ease;
+}
 
 .color {
     background: linear-gradient(to right, #FF738E, #DA6FE1, #997EFA);
@@ -53,6 +56,9 @@ p, h1, h2, h3, h4, h5, h6 {
     a {
         color: #404040;
     }
+    a:hover {
+        color: #303030;
+    }
   }
 
 @media (prefers-color-scheme: dark) {
@@ -71,6 +77,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     a {
         color: #d3d3d3;
+    }
+    a:hover {
+        color: #a0a0a0;
     }
 }
 

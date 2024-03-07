@@ -9,7 +9,8 @@ let bg = window.getComputedStyle(document.body, null).getPropertyValue('backgrou
 function zoomIn() {
     if (fontSize <= 28) {
         fontSize++;
-        document.getElementById("container").style.fontSize = fontSize + "px"; 
+        document.getElementById("container").style.fontSize = fontSize + "px";
+        document.getElementById("sizeLabel").innerHTML = fontSize;
     }
 }
 
@@ -17,6 +18,7 @@ function zoomOut() {
     if (fontSize >= 12) {
         fontSize--;
         document.getElementById("container").style.fontSize = fontSize + "px"; 
+        document.getElementById("sizeLabel").innerHTML = fontSize;
     }
 }
 
